@@ -1,0 +1,95 @@
+h1 Create new campaign
+form#new_campaign_form
+  .level-one
+    .form-group
+      label Title
+      input.form-control type="text"
+    .form-group
+      label Description
+      textarea.form-control placeholder=("Enter as much information here as possible to describe your campaign and what you are trying to achieve. Others will see this description unless the campaign is accessible to collaborators only.") rows="6" type="text"
+      small.form-text
+        | Surround content with an asterisk on each side to make it
+        i  italic
+        |  Surround content with two asterisks on each side to make it
+        b  bold
+    .actions.pull-right
+      input#one-next.btn.btn-primary type="button" value="Next"
+  .level-two.mt-5
+    .form-group
+      label This campaign will be accessible to:
+    .campaign-visibility
+      .form-group
+        label.radio-inline
+          input.mr-2 checked="" name="optradio" type="radio"
+          | Everyone
+        p This campaign will be visible to other PolicyMogul users and may be indexed by search engines. Specific documents, collaborators and other information you choose can be made available to campaign collaborators only.
+      .form-group
+        label.radio-inline
+          input.mr-2 checked="" name="optradio" type="radio"
+          | Parliamentarians and collaborators only
+        p PolicyMogul maintains a list of MPs and peers, and allows them and their staff to view campaigns related to their interests. Specific documents, collaborators and other information you choose can be made available to campaign collaborators only.
+      .form-group
+        label.radio-inline
+          input.mr-2 checked="" name="optradio" type="radio"
+          | Collaborators only
+        p This campaign will not be displayed to others; you will need to invite specific people in order to collaborate with them.
+    .actions.pull-right
+      input#two-prev.btn.btn-primary.mr-2 type="button" value="Previous"
+      input#two-next.btn.btn-primary type="button" value="Next"
+  .level-three.mt-5
+    .form-group
+      label Tags that describe this campaign:
+      .selected_tag_list
+        a.label.label--tag data-tag=("Air conditioning")
+          | Air Traffic Control&nbsp;
+          span.close ×
+      input.form-control placeholder=("Type to add more tags...") type="text"
+      .select-scroll-box
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  AIDS
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Air Fares
+        .custom-control.custom-checkbox
+          input.custom-control-input checked="checked" type="checkbox"
+          label.custom-control-label for="customCheck"  Air Traffic Control
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Albania
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Alcohal (Drink driving)
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Alcohal (Licensing)
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Alfa Group
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Alzheimers
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Anesthetics
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Animals (All issues)
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Animals (Cattle)
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Animals (Chickens)
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Animals (Dangerous dogs)
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Animals (Experimentation/testing)
+        .custom-control.custom-checkbox
+          input.custom-control-input type="checkbox"
+          label.custom-control-label for="customCheck"  Animals (Feed)
+    .actions.pull-right
+      input#three-prev.btn.btn-primary.mr-2 type="button" value="Previous"
+      input.btn.btn-primary data-disable-with=("Sign in") name="commit" type="submit" value="Save"

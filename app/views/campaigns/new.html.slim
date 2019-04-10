@@ -1,0 +1,9 @@
+.col-sm-12.main
+  .content
+    .row
+      .col-md-9.form-container
+        == render 'form'
+      .col-md-3
+        == link_to campaigns_path, class: 'btn-link' do
+          i.fa.fa-long-arrow-left
+          | Back to campaigns

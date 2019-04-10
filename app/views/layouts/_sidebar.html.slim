@@ -1,0 +1,23 @@
+#navbarsExampleDefault.sidebar.offcanvas-collapse.navbar-collapse
+  span.fa.fa-close.close1
+  a.logo-box href="javascript:void(0);"
+    == image_tag 'logo.png', class: 'logo', height: "32", width: "137"
+  ul.nav.nav-sidebar
+    li.nav-item.dashboard_con
+      == link_to 'Home', '/', class: 'nav-link'
+    li.nav-item.campaigns_con.active
+      == link_to 'Campaigns', campaigns_path, class: 'nav-link'
+    li.nav-item.organisations_con
+      a.nav-link href="#"  Organisations
+    li.nav-item.profiles_con
+      a.nav-link href="#"  Profile
+  .bottom
+    ul.nav.tandcs
+      li
+        a href="#"  Terms &amp; conditions
+      li
+        a href="#"  Business terms &amp; conditions
+      li
+        a href="#"  Privacy policy
+    p.copy © PolicyMogul 2019
+    a.sign-out data-method="delete" href="/users/sign_out" rel="nofollow"  Sign out

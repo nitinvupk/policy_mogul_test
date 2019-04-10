@@ -1,0 +1,20 @@
+nav.navbar.navbar-expand.top-bar
+  .collapse.navbar-collapse
+    ul
+      li.mobile-menu
+        button.navbar-toggler.p-0.border-0.d-inline-block data-toggle="offcanvas" type="button"
+          span.hamburger
+    a.logo-box href="javascript:void(0);"
+      == image_tag 'logo.png', class: 'logo', height: "32", width:"137"
+    ul.navbar-nav.logged-in.ml-auto
+      li#notification-list.nav-item.dropdown
+        a.nav-link aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+          span.notification-counter-container
+            i.fa.fa-bell-o
+        .dropdown-menu.notifications-dropdown.dropdown-menu-right aria-labelledby="notifications-dropdown"
+          a.dropdown-item.p-2 href="#"  You don't have any pending notifications
+      li.nav-item.dropdown.account-menu
+        a#account-dropdown.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"  test@mailinator.com
+        .dropdown-menu aria-labelledby="account-dropdown"
+          a.dropdown-item href="#"  Profile
+          a.dropdown-item data-method="delete" href="#" rel="nofollow"  Sign out
